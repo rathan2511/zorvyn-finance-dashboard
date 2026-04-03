@@ -1,0 +1,253 @@
+/* App Layout */
+.app-container {
+  min-height: 100vh;
+}
+
+.main-content {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto; /* Centers the content */
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.role-switcher select {
+  padding: 0.4rem;
+  margin-left: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+/* Summary Cards Styling */
+.summary-container {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  flex: 1; /* Makes cards equal width */
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.04);
+}
+
+.card h3 {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.card h2 {
+  font-size: 2rem;
+  color: #111827;
+}
+
+.text-green { color: #10b981 !important; }
+.text-red { color: #ef4444 !important; }
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .summary-container {
+    flex-direction: column;
+  }
+}
+/* Charts Styling */
+.charts-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.chart-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.04);
+}
+
+.chart-card h3 {
+  font-size: 1.1rem;
+  color: #111827;
+  margin-bottom: 1rem;
+}
+
+.chart-wrapper {
+  height: 300px; /* Recharts needs a specific height to draw */
+  width: 100%;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .charts-container {
+    grid-template-columns: 1fr; /* Stack vertically on small screens */
+  }
+}
+/* Transactions Section */
+.transactions-container {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.04);
+  margin-bottom: 2rem;
+}
+
+.transactions-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.search-input {
+  padding: 0.5rem 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  width: 250px;
+}
+
+/* Admin Add Form */
+.add-transaction-form {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: #f9fafb;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+.add-transaction-form input, 
+.add-transaction-form select {
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  flex: 1;
+}
+
+.add-transaction-form button {
+  padding: 0.5rem 1.5rem;
+  background: #111827;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.add-transaction-form button:hover {
+  background: #374151;
+}
+
+/* Table Styling */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.transactions-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.transactions-table th {
+  text-align: left;
+  padding: 0.75rem 1rem;
+  background: #f9fafb;
+  color: #6b7280;
+  font-weight: 600;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.transactions-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+  color: #111827;
+}
+
+/* Type Badges */
+.badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.badge.income {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.badge.expense {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.empty-state {
+  text-align: center;
+  color: #6b7280;
+  padding: 2rem !important;
+}
+
+/* Responsive Form */
+@media (max-width: 768px) {
+  .add-transaction-form {
+    flex-direction: column;
+  }
+}
+/* Insights Section */
+.insights-container {
+  margin-bottom: 2rem;
+}
+
+.insights-container h3 {
+  font-size: 1.2rem;
+  color: #111827;
+  margin-bottom: 1rem;
+}
+
+.insights-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.insight-card {
+  background: white;
+  padding: 1.2rem;
+  border-radius: 8px;
+  border-left: 4px solid #8b5cf6; /* Purple accent line */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+}
+
+.insight-label {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-bottom: 0.3rem;
+  text-transform: uppercase;
+}
+
+.insight-card h4 {
+  font-size: 1.1rem;
+  color: #111827;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .insights-grid {
+    grid-template-columns: 1fr;
+  }
+}
