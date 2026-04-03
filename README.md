@@ -3,7 +3,7 @@
 A clean, interactive, and responsive financial dashboard built for the Zorvyn Frontend Developer Intern screening assessment. 
 
 ##  Live Demo
-*(Paste your deployed Vercel/Netlify link here later)*
+https://zorvyn-finance-dashboard-two.vercel.app/
 
 ##  Features
 *   **Dashboard Overview:** Displays calculated Total Balance, Income, and Expenses.
